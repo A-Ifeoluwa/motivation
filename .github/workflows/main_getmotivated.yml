@@ -29,5 +29,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: GetMotivated
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F599F125375444A8AD99EE2A7D760033 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
         package: frontend/
