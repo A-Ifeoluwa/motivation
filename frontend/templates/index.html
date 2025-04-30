@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Send a Message</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Message</title>
 </head>
 <body>
-  <h2>Contact Us</h2>
-  <form method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message" required></textarea><br>
-    <button type="submit">Send</button>
-  </form>
-  <p>{{ status }}</p>
+    <h1>Welcome! Tell us your name!</h1>
+    <form method="POST">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if message %}
+        <h2>{{ message }}</h2>
+    {% endif %}
 </body>
 </html>
