@@ -23,11 +23,7 @@ jobs:
         cd frontend
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-# Step to login to Azure
-    - name: 'Login to Azure'
-      uses: azure/login@v1
-      with:
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F599F125375444A8AD99EE2A7D760033 }}
+
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
