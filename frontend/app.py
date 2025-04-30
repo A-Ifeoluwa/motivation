@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Replace this with your Azure Function URL
-AZURE_FUNCTION_URL = "https://<YOUR-FUNCTION-URL>"
+AZURE_FUNCTION_URL = "https://https://getmotivatedfunction.azurewebsites.net/api/SendMessage?"
 
 @app.route("/", methods=["GET", "POST"])
 def index():
