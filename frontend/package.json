@@ -1,0 +1,13 @@
+{
+  "name": "motivational-contact-form",
+  "version": "1.0.0",
+  "description": "A contact form with motivational autoresponder",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo \"No start script defined\"",
+    "deploy": "echo \"Frontend is static, no deployment script required\""
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {}
+}
